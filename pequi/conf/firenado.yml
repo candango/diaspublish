@@ -16,7 +16,7 @@ data:
       # db: 0
 components:
   - id: pequi
-    class: pequi.PequiComponent
+    class: pequi.application.PequiComponent
     enabled: true
   #- id: admin
   #  enabled: true
