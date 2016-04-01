@@ -14,10 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import pequi.handlers
 import firenado.core
 
 
-class IndexHandler(firenado.core.TornadoHandler):
+class PequiComponent(firenado.core.TornadoComponent):
 
-    def get(self):
-        self.render("index.html", message="Pequi CMS")
+    def get_handlers(self):
+        return [
+            (r'/', pequi.handlers.IndexHandler),
+        ]
+
+    def install(self):
+        """ Component installation functional test.
+        This is only printing some output but it could be something more.
+        """
+        print('Installing pequi cms.')
