@@ -1,0 +1,30 @@
+{
+    "name": "candango/pequi",
+    "type": "library",
+    "keywords": ["myfuses", "mvc"],
+    "description": "Pequi is a markdown documentation library.",
+    "license": "Apache-2.0",
+    "homepage": "http://candango.org/projects/myfuses",
+    "authors": [
+        {
+            "name": "Flavio Garcia",
+            "email": "piraz@candango.org",
+            "homepage": "http://candango.org/contributors/piraz"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "myfuses": "dev-develop",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-xml": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=6.4.0",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-0": {"Pequi": ""}
+    }
+}
